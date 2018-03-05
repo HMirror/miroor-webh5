@@ -1,0 +1,32 @@
+.me_component_earth{
+  background: url('../img/earth.png');
+  background-size:100%;
+  -webkit-animation: earth 8s linear infinite;
+}
+
+
+@-webkit-keyframes earth{
+  0%{-webkit-transform:rotate(0deg)}
+  20%{-webkit-transform:rotate(72deg)}
+  40%{-webkit-transform:rotate(144deg)}
+  60%{-webkit-transform:rotate(216deg)}
+  80%{-webkit-transform:rotate(288deg)}
+  100%{-webkit-transform:rotate(360deg)}
+}
+
+.pro{
+  width: 326px;
+  margin-bottom: 40px;
+  left:50%;
+  margin-left: -154px;
+  position: relative;
+  line-height: 26px;
+  color:#fff;
+}
+
+
+.pro_year{
+  position: absolute;
+  top:0;
+  right:40px;
+}

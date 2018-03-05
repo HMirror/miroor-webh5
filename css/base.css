@@ -1,0 +1,209 @@
+.me{
+  height: 100%;
+}
+
+.me_page{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+
+.me_component{
+     position:absolute;
+ }
+
+ /*  第一张页面*/
+  .me_component_girl {
+    position: relative;
+  }
+
+ .me_component_hello {
+    left:50%;
+    margin-left: -179.5px;
+    line-height: 84px;
+     text-align: center;
+    background: url(../img/left_one.png) no-repeat;
+    background-size:100%;
+ }
+ .me_component_what {
+   left:50%;
+   margin-left: 45.5px;
+   line-height: 84px;
+   text-align: center;
+  background: url(../img/right_one.png) no-repeat;
+  background-size:100%;
+ }
+ .me_component_job {
+   width: 135px;
+   height: 68px;
+   line-height: 68px;
+   background: #f5cd19;
+   border: 1px solid #fff;
+   border-radius: 25%;
+   text-align: center;
+ }
+.me_component_arrow{
+  width: 42.5px;
+  height: 20px;
+  left: 50%;
+  margin-left: -21.25px;
+  bottom: 5px;
+  display: block;
+  z-index: 99;
+  animation-fill-mode: both;
+  animation: rubberBand 1s linear infinite;
+  backface-visibility: hidden;
+  -moz-animation-fill-mode: both;
+  -moz-animation: rubberBand 1s linear infinite;
+  -moz-backface-visibility: hidden;
+  -ms-animation-fill-mode: both;
+  -ms-animation: rubberBand 1s linear infinite;
+  -ms-backface-visibility: hidden;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation: rubberBand 1s linear infinite;
+  -webkit-backface-visibility: hidden;
+}
+.me_component_arrow:before{
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 6px;
+  background-color: #f4fcff;
+  border-radius: 3px;
+  position: absolute;
+  transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  -moz-transform: rotateZ(-30deg);
+  -webkit-transform: rotateZ(-30deg);
+}
+.me_component_arrow:after{
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 6px;
+  background-color: #f4fcff;
+  border-radius: 3px;
+  position: absolute;
+  transform: rotateZ(30deg);
+  -ms-transform: rotateZ(30deg);
+  -moz-transform: rotateZ(30deg);
+  -webkit-transform: rotateZ(30deg);
+  left: 16px;
+}
+
+@-webkit-keyframes rubberBand{
+  0%{-webkit-transform:scale3d(1,1,1)}
+  30%{-webkit-transform:scale3d(1.25,.75,1)}
+  40%{-webkit-transform:scale3d(.75,1.25,1)}
+  50%{-webkit-transform:scale3d(1.15,.85,1)}
+  65%{-webkit-transform:scale3d(.95,1.05,1)}
+  75%{-webkit-transform:scale3d(1.05,.95,1)}
+  100%{-webkit-transform:scale3d(1,1,1)}
+}
+@-webkit-keyframes rubberBand{
+  0%{-moz-transform:scale3d(1,1,1)}
+  30%{-moz-transform:scale3d(1.25,.75,1)}
+  40%{-moz-transform:scale3d(.75,1.25,1)}
+  50%{-moz-transform:scale3d(1.15,.85,1)}
+  65%{-moz-transform:scale3d(.95,1.05,1)}
+  75%{-moz-transform:scale3d(1.05,.95,1)}
+  100%{-moz-transform:scale3d(1,1,1)}
+}
+
+/*  第二张界面*/
+.me_component_title{
+  background: url(../img/title.png) no-repeat;
+  background-size:100%;
+}
+.me_component_baseInfo ,.me_component_skill,.me_component_ex,.me_component_aboutMe{
+  line-height: 42px;
+  text-align: center;
+}
+.me_component_myInfo{
+  font-size: 20px;
+  text-align: left;
+}
+
+/*  职业技能*/
+.me_component_fighting{
+  background: #f5cd19;
+  line-height: 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding:8px;
+}
+
+.me_component_warriorInfo{
+  line-height: 20px;
+  background: #f5cd19;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  text-align: center;
+  padding: 8px;
+}
+
+
+.me_component_warrior{
+  background: url('../img/warrior.png') no-repeat;
+  background-size: 100%;
+  -webkit-animation: img 1s linear 6;
+}
+
+@-webkit-keyframes img{
+  0%{-webkit-transform:rotate(5deg)}
+  20%{-webkit-transform:rotate(0deg)}
+  40%{-webkit-transform:rotate(-5deg)}
+  60%{-webkit-transform:rotate(-2deg)}
+  80%{-webkit-transform:rotate(2deg)}
+  100%{-webkit-transform:rotate(0deg)}
+}
+
+.me_component_hotball{
+  background: url('../img/hot.png') no-repeat;
+  background-size: 100%;
+  -webkit-animation: hot 6s linear infinite;
+}
+
+@-webkit-keyframes hot{
+  0%{left:-5%; top:100px;}
+  20%{left:17%; top:100px;}
+  40%{left:39%; top:100px;}
+  60%{left:61%; top:100px;}
+  80%{left:83%; top:100px;}
+  100%{left:105%; top:100px;}
+
+}
+
+.me_component_heart{
+  background: url('../img/heart.png') no-repeat;
+  background-size: 100%;
+  -webkit-animation: heart 4s linear infinite;
+}
+
+@-webkit-keyframes heart{
+  0%{-webkit-transform:scale(0,0)}
+  20%{-webkit-transform:scale(0.2,0.2)}
+  40%{-webkit-transform:scale(0.4,0.4)}
+  60%{-webkit-transform:scale(0.6,0.6)}
+  80%{-webkit-transform:scale(0.8,0.8)}
+  100%{-webkit-transform:scale(1,1)}
+}
+@-webkit-keyframes heart{
+  0%{-moz-transform:scale(0,0)}
+  20%{-moz-transform:scale(0.2,0.2)}
+  40%{-moz-transform:scale(0.4,0.4)}
+  60%{-moz-transform:scale(0.6,0.6)}
+  80%{-moz-transform:scale(0.8,0.8)}
+  100%{-moz-transform:scale(1,1)}
+}
+
+.me_component_finally{
+  background: #f5cd19;
+  border: 1px solid #fff;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 20px;
+  line-height: 30px;
+  color:#fff;
+}

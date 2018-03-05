@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>入场券</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- 外部引用 -->
+  <script type="text/javascript" src="js/plugin/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/plugin/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/plugin/jquery.fullPage.js"></script>
+  <!-- 基础 -->
+  <script type="text/javascript" src="js/base.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <!-- 各种Js -->
+  <link rel="stylesheet" href="css/skill.css">
+  <script type="text/javascript" src="js/skill.js"></script>
+  <link rel="stylesheet" href="css/project.css">
+  <script type="text/javascript" src="js/project.js"></script>
+  <!-- 顺序管理 -->
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+  <!-- fullpage滑屏 -->
+<script>
+  var me = new main();
+  me
+    .addPage('page-1')
+      .addComponent('girl',{
+        width:210,
+        height:381,
+        bg:'img/girl.png',
+        css:{opacity:0,top:100},
+        animateIn:{opacity:1,top:100},
+        animateOut:{opacity:0,top:120},
+        center:true,
+      })
+      .addComponent('hello',{
+        text:'面试官，您好！',
+        width: 135,
+        height: 91,
+        css:{opacity:0,top:78},
+        animateIn:{opacity:1,top:78},
+        animateOut:{opacity:0,top:80},
+        delay:500,
+      })
+      .addComponent('what',{
+        width: 135,
+        height: 91,
+        text:'我是来求职的',
+        css:{opacity:0,top:98},
+        animateIn:{opacity:1,top:98},
+        animateOut:{opacity:0,top:80},
+        delay:800,
+      })
+      .addComponent('job',{
+        width:138,
+        text:'前端开发程序猿',
+        css:{opacity:0,bottom:50},
+        animateIn:{opacity:1},
+        animateOut:{opacity:0},
+        delay:1300,
+        center:true
+      })
+      .addComponent('arrow',{
+        css:{opacity:0},
+        animateIn:{opacity:1},
+        animateOut:{opacity:0},
+        delay:1300,
+      })
+    .addPage('page-2')
+      .addComponent('title',{
+        width:201,
+        height:42,
+        css:{top:26,left:10},
+      })
+      .addComponent('baseInfo',{
+        text:'基本信息|BaseInfo',
+        width:201,
+        height:42,
+        css:{top:26,left:10,opacity:0},
+        animateIn:{opacity:1,top:26},
+        animateOut:{opacity:0,top:40},
+      })
+      .addComponent('myInfo',{
+        width:220,
+        text:'姓名：黄亚琴',
+        css:{top:208,left:86,opacity:0},
+        animateIn:{opacity:1,top:208},
+        animateOut:{opacity:0,top:228},
+        delay:300,
+        center:true,
+      })
+      .addComponent('myInfo',{
+        width:220,
+        text:'年龄：24',
+        css:{top:248,left:86,opacity:0},
+        animateIn:{opacity:1,top:248},
+        animateOut:{opacity:0,top:268},
+        delay:600,
+        center:true,
+      })
+      .addComponent('myInfo',{
+        width:220,
+        text:'毕业院校：长沙民政学院',
+        css:{top:288,left:86,opacity:0},
+        animateIn:{opacity:1,top:288},
+        animateOut:{opacity:0,top:308},
+        delay:800,
+        center:true,
+      })
+      .addComponent('myInfo',{
+        width:220,
+        text:'籍贯：湖南',
+        css:{top:328,left:86,opacity:0},
+        animateIn:{opacity:1,top:328},
+        animateOut:{opacity:0,top:348},
+        delay:950,
+        center:true,
+      })
+      .addComponent('arrow',{
+        css:{opacity:0},
+        animateIn:{opacity:1},
+        animateOut:{opacity:0},
+        delay:1300,
+      })
+    .addPage('page-3')
+      .addComponent('title',{
+        width:201,
+        height:42,
+        css:{top:26,left:10},
+      })
+      .addComponent('skill',{
+        text:'职业技能|Pro skills',
+        width:201,
+        height:42,
+        css:{top:26,left:10,opacity:0},
+        animateIn:{opacity:1,top:26},
+        animateOut:{opacity:0,top:40},
+      })
+      .addComponent('skillPro',{
+        type:'skill',
+        data:[
+          ['H5/Css3','1','0.8','熟练','pink'],
+          ['JS','1','0.8','熟练','pink'],
+          ['vue','1','0.6','一般','#13a774'],
+          ['sass/webpack','1','0.6','一般','#13a774'],
+          ['Phtoshop','1','0.8','熟练','pink'],
+          ['illustrator','1','0.8','熟练','pink'],
+        ],
+        width:240,
+        css:{
+          top:160,
+          left:50,
+          opacity:0
+        },
+        animateIn:{opacity:1,top:160},
+        animateOut:{opacity:0,top:260},
+        delay:500,
+        center:true,
+      })
+      .addComponent('fighting',{
+        text:'这是我目前的技能表，希望能匹配的上贵公司的职位同时有个更好的提升。',
+        width:200,
+        center:true,
+        css:{bottom:80,opacity:0},
+        animateIn:{opacity:1,bottom:80},
+        animateOut:{opacity:0,bottom:10},
+        delay:2000
+      })
+      .addComponent('arrow',{
+        css:{opacity:0},
+        animateIn:{opacity:1},
+        animateOut:{opacity:0},
+        delay:1300,
+      })
+      .addPage('page-4')
+        .addComponent('title',{
+          width:201,
+          height:42,
+          css:{top:26,left:10},
+        })
+        .addComponent('ex',{
+          text:'项目经验|Project Ex',
+          width:201,
+          height:42,
+          css:{top:26,left:10,opacity:0},
+          animateIn:{opacity:1,top:26},
+          animateOut:{opacity:0,top:40},
+        })
+        .addComponent('earth',{
+          width:124,
+          height:128,
+          center:true,
+          css:{top:90,opacity:0},
+          animateIn:{opacity:1,top:90},
+          animateOut:{opacity:0,top:40},
+        })
+        .addComponent('prox',{
+          type:'project',
+          data:[
+            ['湖南承影信息科技公司','15.11-17.03','设计师','上线项目：请搜appstore 七猴篮球'],
+            ['北京普诺迪信息系统公司','17.04-18.03','前端工程师','上线项目：请点击官网查看系统网站'],
+          ],
+          width:400,
+          css:{top:270,opacity:0},
+          animateIn:{opacity:1,top:270},
+          animateOut:{opacity:0,top:220},
+          delay:500
+        })
+        .addComponent('arrow',{
+          css:{opacity:0},
+          animateIn:{opacity:1},
+          animateOut:{opacity:0},
+          delay:1300,
+        })
+      .addPage('page-5')
+        .addComponent('title',{
+          width:201,
+          height:42,
+          css:{top:26,left:10},
+        })
+        .addComponent('aboutMe',{
+          text:'自我评价|About me',
+          width:201,
+          height:42,
+          css:{top:26,left:10,opacity:0},
+          animateIn:{opacity:1,top:26},
+          animateOut:{opacity:0,top:40},
+        })
+        .addComponent('warrior',{
+          width:204,
+          height:230,
+          css:{top:205,opacity:0},
+          animateIn:{opacity:1,top:205},
+          animateOut:{opacity:0,top:200},
+          center:true,
+        })
+        .addComponent('warriorInfo',{
+          type:'base',
+          text:'一个有信仰的程序猿，吃得苦，霸得蛮，耐得烦',
+          width:200,
+          css:{top:418,opacity:0},
+          animateIn:{opacity:1,top:418},
+          animateOut:{opacity:0,top:500},
+          center:true,
+          delay:500
+        })
+        .addComponent('hotball',{
+          width:30,
+          height:40,
+          css:{top:100,opacity:0},
+          animateIn:{opacity:1,top:100},
+          animateOut:{opacity:0,top:60},
+        })
+        .addComponent('arrow',{
+          css:{opacity:0},
+          animateIn:{opacity:1},
+          animateOut:{opacity:0},
+          delay:1300,
+        })
+      .addPage('page-6')
+        .addComponent('finally',{
+          type:'base',
+          text:'如您想进一步了解，请联系我哟。187-1112-2370',
+          width:243,
+          center:true,
+          css:{top:216,left:10,opacity:0},
+          animateIn:{opacity:1,top:216},
+          animateOut:{opacity:0,top:40},
+        })
+        .addComponent('heart',{
+          width:150,
+          height:167,
+          css:{bottom:80,opacity:0},
+          animateIn:{opacity:1,bottom:80},
+          animateOut:{opacity:0,bottom:0},
+          center:true,
+          delay:1200,
+        })
+  .loader()
+</script>
+</body>
+</html>

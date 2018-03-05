@@ -1,0 +1,64 @@
+.line{
+  font-size: 12px;
+  position: relative;
+}
+
+.bar_bottom{
+  background: #eee;
+  height: 20px;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.bar_top{
+  height: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+ .me_component_skill .bg{
+    width: 0%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background: red;
+    z-index: 4;
+}
+
+ .me_component_skill_load .bg{
+    transition:all 1s 0.5s;
+    width:100%;
+    z-index: 4;
+}
+
+ .me_component_skill_leave .bg{
+   width:0%;
+}
+
+.name{
+  position: absolute;
+  top:-12px;
+  left:24px;
+  z-index: 5;
+}
+.rate{
+  position: absolute;
+  right:-30px;
+  top:-12px;
+  opacity: 0
+}
+.me_component_skill_load .rate{
+   transition:all 1s 1s;
+   opacity: 1
+}
+.me_component_skill_leave .rate{
+  opacity: 0
+}
+.me_component_skill_load .me_component_fighting {
+   transition:all 1s 1.5s;
+   opacity: 1
+}
+.me_component_skill_leave .me_component_fighting {
+  opacity: 0
+}
